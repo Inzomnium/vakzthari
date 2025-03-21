@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vakzthari/static/css/main.c2a9f211.css",
+    "main.js": "/vakzthari/static/js/main.2e647857.js",
+    "static/js/453.4de4d4ad.chunk.js": "/vakzthari/static/js/453.4de4d4ad.chunk.js",
+    "index.html": "/vakzthari/index.html",
+    "main.c2a9f211.css.map": "/vakzthari/static/css/main.c2a9f211.css.map",
+    "main.2e647857.js.map": "/vakzthari/static/js/main.2e647857.js.map",
+    "453.4de4d4ad.chunk.js.map": "/vakzthari/static/js/453.4de4d4ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2a9f211.css",
+    "static/js/main.2e647857.js"
+  ]
+}
