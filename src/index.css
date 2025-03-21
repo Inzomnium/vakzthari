@@ -1,13 +1,275 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Variables y estilos globales */
+@import url('https://fonts.cdnfonts.com/css/tilt-warp');
+@import url('https://fonts.cdnfonts.com/css/whois');
+
+                
+:root {
+  --fondo-principal: #EAECE9;      
+  --texto-principal: #11181b;        
+  --texto-secundario: #242a2c;      
+  --botones: #1c1c1c;             
+  --acento: #673AB7;
+  --contra-color:#cfcfcf;           
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #FFFFFF 45%, #cfcfcf 100%);
+  color: var(--texto-principal);
+  font-family:  'Tilt Warp', sans-serif;
+}
+h1,h2,h3,h4 {
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+hr {
+  width: 50%;
+  border-width: 2px;
+  background-color: black;
+}
+p {
+  font-family: 'Whois', sans-serif;
+  letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 20px 5px;
+}
+
+
+#logoV{
+  width: 16vw;
+    height: auto;
+    margin: 4vw 0 8vw;
+    opacity: 0.7;
+}
+
+.headline {
+  font-size: 3.8rem;
+  margin-bottom: 30px;
+  color: var(--texto-principal);
+  
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--botones);  
+  color: var(--contra-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: var(--acento);
+  color: white;
+}
+
+/* Propuesta de Valor */
+.value-prop-section {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.value-prop-title {
+  color: var(--texto-principal);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.value-prop-list {
+    padding: 0;
+    color: var(--texto-secundario);
+    font-size: 1.1rem;
+    font-family: 'Whois', sans-serif;
+    text-align: justify;
+    margin: 0 auto;
+    display: block;
+    width: 45vw;
+}
+
+.value-prop-item {
+  margin-bottom: 10px;
+}
+
+/* Misterio */
+.mystery-section {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.mystery-title {
+  color: var(--texto-principal);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.mystery-text {
+  color: var(--texto-secundario);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Formulario de Suscripción */
+.subscribe-section {
+  margin: 10px 50px;
+  text-align: center;
+  border: 4px solid black;
+  padding: 0 0 25px;
+}
+
+.subscribe-title {
+  color: var(--texto-principal);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-input {
+  font-size: 1rem;
+  border: 1px solid var(--texto-secundario);
+  margin-bottom: 15px;
+  width: 300px;
+  max-width: 100%;
+  border-width: 4px;
+  font-family: 'Whois', sans-serif;
+  color: black;
+  border-radius: 25px;
+  padding: 10.2px 1em;
+  font-weight: 699;
+}
+
+.subscribe-error {
+  color: red;
+}
+
+.subscribe-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--botones);
+  color: var(--texto-principal);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: var(--acento);
+  color: #fff;
+}
+
+.subscribe-success {
+  color: var(--fondo-principal);
+  font-size: 0.9rem;
+  background: var(--botones);
+  width: 60vw;
+  margin: 1em auto;
+  padding: 0.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.subscribe-section small {
+  width: 50vw;
+  font-size: 14px;
+  margin: 1em auto 1em;
+  display: block;
+}
+/* Footer */
+.footer-section {
+  padding: 10px 20px;
+  margin-top: 1em;
+  text-align: center;
+  background-color: var(--fondo-principal);
+  border-top: 5px solid var(--botones);
+}
+
+.footer-text {
+  color: var(--texto-secundario);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  color: var(--texto-principal);
+  font-size: 1rem;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+}
+
+.footer-warning {
+  color: var(--acento);
+  font-size: 1rem;
+  text-decoration: underline;
+}
+footer .channels {
+  width: 45vw;
+  margin: 0 auto;
+  border: 2px solid var(--botones);
+}
+.closing p {
+  margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #logoV {
+    width: 40vw;
+  }
+  .headline {
+    font-size: 3rem;
+  }
+  .value-prop-list {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logoV {
+    width: 50vw;
+  }
+  .headline {
+    font-size: 2.5rem;
+  }
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  .value-prop-list {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #logoV {
+    width: 35vw;
+  }
+  .headline {
+    font-size: 2rem;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+  .value-prop-list {
+    font-size: 0.9rem;
+  }
 }
