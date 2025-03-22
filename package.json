@@ -1,7 +1,7 @@
 {
   "name": "vakzthari-landingcd",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://inzomnium.github.io/vakzthari",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -18,8 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build && echo vakzthari.com > build/CNAME",
+   "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
