@@ -1,7 +1,7 @@
 {
   "name": "vakzthari-landingcd",
   "version": "0.1.0",
-  "homepage": "https://inzomnium.github.io/vakzthari",
+  "homepage": "https://vakzthari.com",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
