@@ -3,9 +3,11 @@ import { motion, useAnimation } from 'framer-motion';
 
 const CTAButton = () => {
   const phrases = [
-    "Enter the Machine.",
-    "Discover the System.",
-    "The Machine does not move. It reveals."
+    ">Operator's Manual[lvl1] Here",
+    ">Enter the Machine",
+    ">Discover the System",
+    ">Operator's Manual[lvl1] Here",
+    "Unlock the fog"
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const controls = useAnimation();
